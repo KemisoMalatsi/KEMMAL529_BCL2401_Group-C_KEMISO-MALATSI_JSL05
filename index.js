@@ -41,6 +41,12 @@ function generatePlaylist(guardians, songs) {
 // Function to display playlists
 function displayPlaylists(playlists) {
     const playlistsDiv = document.getElementById("playlists");
+
+    playlists.forEach(({ guardian, playlist }) => {
+        const playlistEl = document.createElement("div");
+        playlistEl.classList.add("plalists");
+        playlistEl.innerHTML = `<h4>${guardian}'s playlist</h4>`
+    })
 }
 
 // Call generatePlaylist and display the playlists for each Guardian
