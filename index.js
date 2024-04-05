@@ -44,7 +44,7 @@ function displayPlaylists(playlists) {
 
     playlists.forEach(({ guardian, playlist }) => {
         const playlistEl = document.createElement("div");
-        playlistEl.id = "plalists";
+        playlistEl.classList.add("playlists");
         playlistEl.innerHTML = `<h4>${guardian}'s playlist</h4>`; // show the guardians name
 
         // Create list element
@@ -65,5 +65,5 @@ function displayPlaylists(playlists) {
 
 // Call generatePlaylist and display the playlists for each Guardian
 
-const plalists = generatePlaylist(guardians, songs);
-generatePlaylist(guardians, songs);
+const playlists = generatePlaylist(guardians, songs);
+displayPlaylists(playlists);
