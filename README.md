@@ -4,7 +4,7 @@ In this challenge, I used JavaScript arrays and the `map()` function to create a
 
 ### Screenshots:
 
-
+![alt text](JSL05_solution.png)
 
 
 
